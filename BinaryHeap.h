@@ -31,6 +31,15 @@ class BinaryHeap
         }
         
     }
+    
+     public:
+        // Constructors & Destructor
+                            BinaryHeap();
+        //
+        bool                Add(int uniqueId, double weight);
+        bool                PopHeap(int& outUniqueId, double& outWeight);
+        bool                ChangePriority(int uniqueId, double newWeight);
+        int                 HeapSize() const;
 
    
 };
